@@ -1,0 +1,44 @@
+.news__blog-container {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.news__blog-container_group {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem;
+    
+}
+
+@media screen and (max-width: 1050px) {
+    .news__blog {
+        margin-right: 1rem;
+    }
+    
+    .news__blog-container {
+        flex-direction: column;
+    }
+
+    .news__blog-container_group  {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        
+
+    }
+}
+
+
+@media screen and (max-width: 990px) {
+    .news__blog-container {
+        flex-direction: column;
+    }
+
+    .news__blog-container_group  {
+        width: 100%;
+
+    }
+}
+
